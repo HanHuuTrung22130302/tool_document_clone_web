@@ -1,0 +1,1 @@
+"""Observed API documentation generation."""

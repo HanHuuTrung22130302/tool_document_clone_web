@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head><title>Interactive Home</title></head>
+  <body>
+    <nav><a href="/products.html">Products</a></nav>
+    <main>
+      <h1>Home</h1>
+      <div role="tablist" aria-label="Product views">
+        <button role="tab" aria-controls="overview" onclick="show('overview')">Overview</button>
+        <button role="tab" aria-controls="pricing" onclick="show('pricing')">Pricing</button>
+      </div>
+      <section id="overview">Overview content</section>
+      <section id="pricing" hidden>Pricing content <a href="/products.html">See products</a></section>
+    </main>
+    <script>
+      function show(id) {
+        document.querySelectorAll('main section').forEach((element) => { element.hidden = element.id !== id; });
+      }
+    </script>
+  </body>
+</html>

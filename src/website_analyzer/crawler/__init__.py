@@ -1,0 +1,1 @@
+"""Scope-safe website crawler."""
